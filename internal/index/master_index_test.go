@@ -53,9 +53,9 @@ func TestMasterIndex(t *testing.T) {
 		PackID: restic.NewRandomID(),
 		Blob: restic.Blob{
 			BlobHandle:         bhInIdx12,
-			Length:             uint(crypto.CiphertextLength(123)),
+			Length:             uint(crypto.CiphertextLength(80)),
 			Offset:             50,
-			UncompressedLength: 80,
+			UncompressedLength: 123,
 		},
 	}
 
